@@ -1,0 +1,79 @@
+body {
+    background : linear-gradient(-45deg, #d90368, #cd0036, #ff5400, #ffbd00);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
+}
+
+h1 {
+    border: 3px solid #fff;
+    height: 5em;
+    max-width: 15em;
+    font-size: 2.5rem;
+    padding: 2rem 1rem;
+    box-shadow: 0 6px 15px #3d011d;
+}
+
+.btn {
+    border: 1px solid #fff;
+    color: antiquewhite;
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 0 3px 3px #3d011d;
+    height: 55px;
+    padding: 1rem 2rem;
+}
+
+.form-control {
+    max-width: 38em;
+}
+
+.btn:hover {
+    background: antiquewhite;
+    color: #220901;
+}
+
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .btn-submit {
+       margin-right: 1em;
+   }
+   
+}
+
+@media (min-width: 768px) {
+    
+    h1 {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    .btn-submit {
+        margin-right: 2em;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    h1 {
+        padding: 3rem;
+    }
+
+}
